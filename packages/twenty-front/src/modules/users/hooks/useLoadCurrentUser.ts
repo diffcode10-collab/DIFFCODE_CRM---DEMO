@@ -88,7 +88,7 @@ export const useLoadCurrentUser = () => {
       workspaceMember = {
         ...user.workspaceMember,
         colorScheme: user.workspaceMember?.colorScheme as ColorScheme,
-        locale: user.workspaceMember?.locale ?? SOURCE_LOCALE,
+        locale: user.workspaceMember?.locale ?? 'es-ES',
       };
 
       setCurrentWorkspaceMember(workspaceMember);
@@ -96,7 +96,7 @@ export const useLoadCurrentUser = () => {
       // Initialize unified format preferences state
       initializeFormatPreferences(workspaceMember);
       dynamicActivate(
-        (workspaceMember.locale as keyof typeof APP_LOCALES) ?? SOURCE_LOCALE,
+        (workspaceMember.locale as keyof typeof APP_LOCALES) ?? 'es-ES',
       );
     }
 

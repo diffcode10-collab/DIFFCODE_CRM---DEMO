@@ -131,7 +131,7 @@ export const UserMetadataProviderInitialEffect = () => {
         ...workspaceMember,
         colorScheme: (workspaceMember.colorScheme as ColorScheme) ?? 'System',
         locale:
-          (workspaceMember.locale as keyof typeof APP_LOCALES) ?? SOURCE_LOCALE,
+          (workspaceMember.locale as keyof typeof APP_LOCALES) ?? 'es-ES',
       };
     };
 
@@ -145,7 +145,7 @@ export const UserMetadataProviderInitialEffect = () => {
       initializeFormatPreferences(updatedWorkspaceMember);
 
       dynamicActivate(
-        (workspaceMember.locale as keyof typeof APP_LOCALES) ?? SOURCE_LOCALE,
+        (workspaceMember.locale as keyof typeof APP_LOCALES) ?? 'es-ES',
       );
     }
 

@@ -403,7 +403,7 @@ export class AuthResolver {
       userId: user.id,
       email: user.email,
       workspace: undefined,
-      locale: signUpInput.locale ?? SOURCE_LOCALE,
+      locale: signUpInput.locale ?? 'es-ES',
       verifyEmailRedirectPath: signUpInput.verifyEmailRedirectPath,
       verificationTrigger: EmailVerificationTrigger.SIGN_UP,
     });
@@ -486,7 +486,7 @@ export class AuthResolver {
       userId: user.id,
       email: user.email,
       workspace,
-      locale: signUpInput.locale ?? SOURCE_LOCALE,
+      locale: signUpInput.locale ?? 'es-ES',
       verifyEmailRedirectPath: signUpInput.verifyEmailRedirectPath,
       verificationTrigger: EmailVerificationTrigger.SIGN_UP,
     });
