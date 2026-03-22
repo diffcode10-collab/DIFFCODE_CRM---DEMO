@@ -128,7 +128,7 @@ const PARTIAL_DELETED_AT_FIELD = {
 const PARTIAL_CREATED_BY_FIELD = {
   type: FieldMetadataType.ACTOR,
   name: 'createdBy',
-  label: 'Created by',
+  label: 'Creado por',
   icon: 'IconCreativeCommonsSa',
   description: 'The creator of the record',
   isNullable: false,
